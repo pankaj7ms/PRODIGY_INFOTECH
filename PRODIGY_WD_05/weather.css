@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.flex-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#EE9CA7,#FFDDE1);
+}
+.app-container{
+    height: fit-content;
+    width: 50vw;
+    border: 1.5px solid white;
+    /* height: 60vh; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(#614385,#516395);
+    color: white;
+    border-radius: 20px;
+    padding-block: 2rem;
+    padding-inline: 3rem;
+    margin-block: 4rem;
+}
+.disp-err{
+    padding: 0.7rem;
+    color: rgba(255, 255, 255, 0.817);
+    align-self: flex-start;
+}
+.weather-data{
+    display: flex;
+    flex-direction: column;   
+}
+.main-params{
+    align-self: center;
+    margin-block: 1rem;
+}
+.input-box{
+    display: flex;
+    justify-content: space-around;
+    gap: 0.4rem;
+}
+.light{
+    align-self: flex-start;
+    padding-inline-start: 0.4rem;
+    margin-block-end: 0.5rem;
+    font-weight: 400;
+}
+.temp{
+    margin-block-end: 0.5rem;
+}
+.input-box input{
+    width: 80%;
+    /* flex-grow: 3; */
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    border-radius: 20px;
+    border: none;
+}
+.input-box button{
+    width: 10%;
+    /* flex-grow: 1; */
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+.other-params{
+    display: flex;
+    justify-content: space-around;
+    margin-block-start: 0.6rem;
+}
