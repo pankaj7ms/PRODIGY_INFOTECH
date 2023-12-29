@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Shadows+Into+Light&display=swap');
+:root{
+    accent-color: #CAEDFF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: linear-gradient(#24C6DC,#514A9D); */
+    /* background-image: linear-gradient(#24C6DC,#1CD8D2); */
+    background-image: linear-gradient(#498be7,#2BC0E4,#EAECC6);
+}
+.app-container{
+    height: fit-content;
+    width: 50vw;
+    border: 1.5px solid white;
+    /* height: 60vh; */
+    text-align: center;
+    /* display: flex;
+    flex-direction: column; */
+    background-image: linear-gradient(#1c181c82,#050e278e),url("bg.jpg");
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px 2px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    border-radius: 20px;
+    padding-block: 2rem;
+    padding-inline: 3rem;
+    margin-block: 4rem;
+}
+.text{   
+    font-family: 'Poppins', sans-serif;
+}
+.heading{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 4rem;
+}
+.time{
+    margin-block: 1rem;
+    font-size: 4rem;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.btn{
+    background-color: #1CD8D2;
+    border: 1.5px solid white;
+    padding-inline: 2rem;
+    padding-block:0.5rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.btn:hover{
+    box-shadow: #1ba4ca 0px 5px 15px 2px;
+}
