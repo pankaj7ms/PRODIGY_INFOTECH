@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#EE9CA7,#FFDDE1);
+}
+.app-container{
+    height: fit-content;
+    width: 50vw;
+    border: 1.5px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(#614385,#516395);
+    color: white;
+    border-radius: 20px;
+    padding-block: 2rem;
+    padding-inline: 3rem;
+    gap: 1rem;
+}
+.status{
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+}
+.heading{
+    font-size: 2.5rem;
+    text-decoration: underline wavy rgb(0, 166, 255) 4px;
+}
+#turn-data{
+    font-size: 3rem;
+}
+.game-board{
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(3,8vw);
+    grid-template-rows: repeat(3,8vw);
+}
+.cell{
+    border: 2px solid black;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.cell:hover{
+    background-color: rgb(173, 173, 242);
+}
+.line{
+    text-decoration: line-through;
+}
+.restart-btn{
+    padding: 1rem;
+}
+.game-board .cell0,
+.game-board .cell1,
+.game-board .cell2{
+    border-top: none;
+}
+.game-board .cell2,
+.game-board .cell5,
+.game-board .cell8{
+    border-right: none;
+}
+.game-board .cell6,
+.game-board .cell7,
+.game-board .cell8{
+    border-bottom: none;
+}
+.game-board .cell0,
+.game-board .cell3,
+.game-board .cell6{
+    border-left: none;
+}
